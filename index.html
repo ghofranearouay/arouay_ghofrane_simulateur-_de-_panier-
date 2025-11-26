@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Foodie - Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="foodie.png" alt="foodie-logo" class="logo" />
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="">Acceuil</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Menu</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <aside id="cart-icon">
+        <div class="shopping-cart">
+          <img
+            src="shopping-cart.png"
+            alt="shopping-cart-icon"
+            id="cart-toggle"
+          />
+          <span class="cart-badge" id="cart-badge">0</span>
+        </div>
+      </aside>
+    </header>
+    <main>
+      <div class="banner">
+        <div class="banner-text">
+          <h1>
+            Just come to <span style="color: #4d7c2a"> Foodie & Order</span>
+          </h1>
+          <p>
+            Here you will find all the best food quality and pure food. Order
+            now to satisfy your hunger pangs.
+          </p>
+          <aside class="buttons">
+            <button class="btn1">Order Now</button>
+            <button class="btn2">Explore more</button>
+          </aside>
+        </div>
+        <div class="banner-image">
+          <img src="banner.png" alt="Delicious food" />
+        </div>
+      </div>
+      <!-- ==================== WHY CHOOSE US SECTION ==================== -->
+      <section class="why-choose-us">
+        <div class="section-header">
+          <h2>Why to choose Us</h2>
+          <p>
+            We offer fresh, high-quality meals made with love, ensuring great
+            taste,<br />convenience, and a delightful dining experience every
+            time
+          </p>
+        </div>
+
+        <div class="features">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="icon-circle">
+              <img src="check.svg" alt="check" />
+            </div>
+            <h3>Easy To Order</h3>
+            <p>
+              Order your favorite meals in just a few clicks with our simple and
+              user-friendly platform.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="icon-circle">
+              <img src="plus.svg" alt="plus" />
+            </div>
+            <h3>Fastest Delivery</h3>
+            <p>
+              Enjoy hot and fresh food at your doorstep with our super-fast and
+              reliable delivery service.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="icon-circle">
+              <img src="quality.svg" alt="quality" />
+            </div>
+            <h3>Best Quality</h3>
+            <p>
+              We use only the finest ingredients to bring you delicious,
+              healthy, and high-quality meals every time.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== POPULAR DISHES SECTION ==================== -->
+      <section class="popular-dishes">
+        <div class="section-header">
+          <h2>Our Popular Dishes</h2>
+          <p>
+            Discover our most loved dishes, crafted with fresh ingredients and
+            bursting with flavors you'll crave again and again.
+          </p>
+        </div>
+        <div class="category-menu">
+          <button class="category-btn active" data-category="all">
+            All Items
+          </button>
+          <button class="category-btn" data-category="burger">Burger</button>
+          <button class="category-btn" data-category="pasta">Pasta</button>
+          <button class="category-btn" data-category="sandwich">
+            Sandwich
+          </button>
+          <button class="category-btn" data-category="thali">Thali</button>
+          <button class="category-btn" data-category="fast-foods">
+            Fast Foods
+          </button>
+        </div>
+        <div class="dishes-grid" id="dishes-container">
+          <!-- Les cartes des plats seront injectées ici par Java.Script -->
+        </div>
+        <button class="see-more" id="see-more">See More</button>
+      </section>
+    </main>
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-sidebar" id="cart-sidebar">
+      <div class="cart-header">
+        <span>Your Cart</span>
+        <button class="cart-close" id="cart-close">×</button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <p class="empty-cart">Your cart is empty</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </aside>
+    <footer>
+      <div class="footer-container">
+        <!-- Column 1: Logo & About -->
+        <div class="footer-column">
+          <img src="foodie.png" alt="Foodie Logo" class="logo" />
+          <p>
+            Delivering the best quality food with love. Fresh ingredients, bold
+            flavors, and fast service.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="acceuil.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="footer-column contact-info">
+          <h3>Contact Us</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 123 Foodie Street, Flavor Town
+          </p>
+          <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+          <p><i class="fas fa-envelope"></i> hello@foodie.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Foodie. All rights reserved. Made with
+          <i class="fas fa-heart" style="color: #ff0000"></i> by You
+        </p>
+      </div>
+    </footer>
+    <script src="java.js"></script>
+  </body>
+</html>
